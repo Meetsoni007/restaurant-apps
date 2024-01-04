@@ -1,0 +1,54 @@
+.image-heading {
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210119/pngtree-simpe-pattern-with-black-background-and-whte-rectangle-gold-line-image_535683.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 30vh;
+    line-height: 30vh;
+    position: relative;
+    z-index: -2;
+}
+
+.image-heading .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.image-heading::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    height: 30vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.image-heading h1 {
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.image-heading button {
+    background: #474747;
+    color: white;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 15px 30px;
+    word-spacing: 5px;
+}
+
+.image-heading a {
+    color: #31b675;
+    cursor: pointer;
+}
+
+.image-heading span {
+    text-transform: capitalize;
+    word-spacing: 30px;
+}

@@ -1,0 +1,173 @@
+.navbar {
+    background-color: #222;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 10vh;
+    line-height: 10vh;
+}
+
+nav ul li {
+    display: inline-block;
+    transition: all 0.5s ease-in;
+    margin: 0 30px 0 0;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: 100;
+    font-size: 15px;
+    letter-spacing: 2px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.8;
+}
+
+nav ul li a:hover {
+    color: #aacbed;
+}
+
+.nav-links-mobile {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+nav i {
+    color: #fff;
+}
+
+.span {
+    position: relative;
+    top: 6px;
+}
+
+.login-area a {
+    font-weight: 100;
+    opacity: 0.8;
+    font-size: 13px;
+    color: #fff;
+}
+
+.login-area i {
+    margin: 0 5px 0 15px;
+    font-size: 13px;
+    color: #fff;
+}
+
+.login-area button {
+    margin-left: 20px;
+}
+
+.logo img {
+    width: 50%;
+    margin-top: -20px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        text-align: center;
+    }
+
+    nav ul {
+        display: block;
+        width: 200px;
+        height: 100vh;
+        position: absolute;
+        top: 88px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease-in;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    nav ul.active {
+        background-color: #08539f;
+        left: 0;
+        opacity: 1;
+        transition: 0.5s;
+        z-index: 100;
+    }
+
+    nav ul li a {
+        font-weight: 400;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+
+    .fa-times {
+        font-size: 2rem;
+    }
+
+    .login-area {
+        position: absolute;
+        right: 10px;
+    }
+}
+
+/* ----Header----- */
+
+header {
+    padding: 40px 0 20px 0;
+    background-color: #fff;
+}
+
+header .box {
+    margin: 0 0 0 30px;
+}
+
+header a {
+    font-size: 13px;
+    color: gray;
+}
+
+header i {
+    font-size: 40px;
+    margin: 2px 15px 0 0;
+    color: #08539f;
+}
+
+
+header .text {
+    margin-top: 10px;
+}
+
+header h4 {
+    line-height: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    header .container {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    header a {
+        font-size: 13px;
+    }
+
+    header i {
+        font-size: 30px;
+        margin-right: 5px;
+        margin-top: 10px;
+    }
+}
